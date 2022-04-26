@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html,body{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        .sidebar{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            gap: 2%;
+            padding-left: 2%;
+            background-color: bisque;
+        }
+        .top-sidebar > *{
+            background-color: gray;
+        }
+        .top-sidebar{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .quadrato{
+            width: 20%;
+            height: 50%;
+        }
+        .rettangolo{
+            width: 30% ;
+            height: 50%;
+        }
+        .rettangolo-2{
+            width: 90%;
+            height: 5%;
+            background-color: gray;
+        }
+        .bottom-sidebar{
+            width: 70%;
+            height: 50%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+        .quadrato-2{
+            width: 25%;
+            height: 25%;
+            background-color: gray;
+        }
+        .main-content{
+            width: 70%;
+            height: 100%;
+            margin-left: 30%;
+            display: flex;
+            flex-direction: column;
+            background-color: lightgray;
+        }
+        .top-main{
+            width: 100%;
+            height: 15%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .top-main > *{
+            background-color: gray;
+        }
+        .main-rettangolo{
+            width: 20em;
+            height: 2em;
+        }
+        .main-quadrato{
+            width: 2em;
+            height: 2em;
+        }
+        .grid-container{
+            width: 80%;
+            height: 50%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 5%;
+        }
+        .grid-container>*{
+            background-color: gray;
+        }
+        .item1{
+            grid-column: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="top-sidebar">
+                <div class="quadrato"></div>
+                <div class="rettangolo"></div>
+            </div>
+            <div class="rettangolo-2"></div>
+            <div class="rettangolo-2"></div>
+            <div class="rettangolo-2"></div>
+            <div class="rettangolo-2"></div>
+            <div class="rettangolo-2"></div>
+            <div class="bottom-sidebar">
+                <div class="quadrato-2"></div>
+            </div>
+            
+        </div>
+        <div class="main-content">
+            <div class="top-main">
+                <div class="main-rettangolo"></div>
+                <div class="main-quadrato"></div>
+            </div>
+            <div class="bottom-main"></div>
+            <div class="grid-container">
+                <div class="item1"></div>
+                <div class="item2"></div>
+                <div class="item3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
